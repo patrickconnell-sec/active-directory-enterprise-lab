@@ -123,7 +123,43 @@ Credentials are not stored in the public version of the script. The administrato
 - Group Policy Management
 - PowerShell
 - Oracle VirtualBox
+## Implementation Screenshots
 
+### Static IPv4 Configuration
+
+DC01 was configured with a static IPv4 address to provide consistent network services for Active Directory and DNS.
+
+![DC01 Static IPv4 Configuration](screenshots/05-DC01-Static-IPv4-Configuration.png)
+
+### Active Directory Forest Deployment
+
+A new Active Directory forest was created using the domain `corp.connell-lab.local`.
+
+![Active Directory Forest Review](screenshots/08-Active-Directory-Forest-Review.png)
+
+### Domain Controller Verification
+
+DC01 was successfully promoted to a domain controller and joined to the new domain.
+
+![DC01 Domain Controller Configuration](screenshots/10-DC01-Domain-Controller-Configuration.png)
+
+### Organizational Unit Structure
+
+Departmental and infrastructure OUs were created to support centralized administration and future Group Policy application.
+
+![Active Directory OU Structure](screenshots/13-Active-Directory-OU-Structure.png)
+
+### Security Group Membership
+
+Users were assigned to departmental security groups to support group-based access control.
+
+![IT Security Group Membership](screenshots/16-IT-Security-Group-Membership.png)
+
+### PowerShell Automated User Provisioning
+
+PowerShell was used to automate creation of fictional enterprise users and assign them to the appropriate OUs and security groups.
+
+![PowerShell Automated User Provisioning](screenshots/18-PowerShell-Automated-User-Provisioning.png)
 ## Project Status
 
 ### Completed
